@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="star-field"></div>
+        <div class="nebula"></div>
+    </div>
+    
+    <div class="game-container">
+        <header>
+            <h1>Cosmic Memory</h1>
+            <div class="stats-board">
+                <div class="stat-item">
+                    <span class="stat-label">Moves</span>
+                    <span id="moves" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Time</span>
+                    <span id="time" class="stat-value">00:00</span>
+                </div>
+                <button id="restart-btn" class="neon-btn">Restart Mission</button>
+            </div>
+        </header>
+
+        <main class="memory-game" id="game-board">
+            <!-- Cards will be injected by JavaScript -->
+        </main>
+    </div>
+
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Mission Accomplished!</h2>
+            <p>You explored the cosmos successfully.</p>
+            <div class="final-stats">
+                <p>Moves: <span id="final-moves">0</span></p>
+                <p>Time: <span id="final-time">00:00</span></p>
+            </div>
+            <button id="play-again-btn" class="neon-btn">Launch Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
